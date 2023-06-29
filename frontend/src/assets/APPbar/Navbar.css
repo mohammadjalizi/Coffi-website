@@ -1,0 +1,25 @@
+.Navbar{
+ background-image: url(../imag/header-bg.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+height:  57rem;
+}
+.btn{
+
+
+    background: #fff;
+    border: 1px solid transparent;
+    color: #222;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+
+}
+.header{
+
+    position: relative;
+    right: 60%;
+    top: 40%;
+
+
+}
