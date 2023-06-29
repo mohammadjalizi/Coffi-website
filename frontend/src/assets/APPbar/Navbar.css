@@ -3,6 +3,7 @@
  background-repeat: no-repeat;
  background-size: cover;
 height:  57rem;
+
 }
 .btn{
 
@@ -19,9 +20,9 @@ height:  57rem;
   
     text-align: end;
     margin-left: 127px;
-    margin-top: 10%;
 
 
+margin-top: 20%;
 
 }
 .btn:hover{
