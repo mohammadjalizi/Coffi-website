@@ -16,10 +16,19 @@ height:  57rem;
 
 }
 .header{
+  
+    text-align: end;
+    margin-left: 127px;
+    margin-top: 10%;
 
-    position: relative;
-    right: 60%;
-    top: 40%;
 
+
+}
+.btn:hover{
+
+
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
 
 }
