@@ -8,7 +8,7 @@ const Navbar = () => {
 <div className='      py-2  hidden  md:flex   justify-between   '>
 <div className='  '>  
 <a  className=' m-4 '   href=''>  صفحه ی اصلی </a>
-<a     href='#'>قهوه</a>
+<a     href='#'>فروشگاه</a>
 <a  className=' m-4 '   href=''>  درباره من </a>
 
 </div>
