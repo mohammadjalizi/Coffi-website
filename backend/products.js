@@ -1,7 +1,7 @@
 const products = [
     {
       id: 1,
-      productName: "coffi",
+      productName: "قهوه فرانسه فرنچ کافی مدیوم – 250 گرمی",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
       price: 100,
