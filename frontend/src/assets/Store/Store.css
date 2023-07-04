@@ -1,0 +1,31 @@
+.Icon{
+
+
+    direction: ltr;
+    margin-left: 33px
+px
+;
+    margin-bottom: 41px;
+    font-size: 25px;
+
+}
+.strong{
+
+    border-color: #d3ac67;
+    border: 2px solid #446084;
+    border-radius: 0;
+    color: #446084;
+    font-family: Helvetica,Arial,Sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    height: 2.2em;
+    line-height: 1.9em;
+    margin: 0.3em 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 2.2em;
+}
+.h1{
+    direction: rtl;
+}
