@@ -1,7 +1,8 @@
 const products = [
     {
       id: 1,
-      productName: "قهوه فرانسه فرنچ کافی مدیوم – 250 گرمی",
+      productName: "قهوه ترک دارک 250 گرمی",
+     
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
       price: 100,
@@ -9,19 +10,19 @@ const products = [
     },
     {
       id: 2,
-      productName: "T-shirt",
+      productName: "قهوه فرانسه فرنچ کافی مدیوم – 250 گرمی",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
       price: 200,
-      imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/1-1_x1awcm.jpg",
+      imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/french-coffee-250med-768x768_f4mwqf.jpg",
     },
     {
       id: 3,
       productName: "T-shirt",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
-      price: 162.500,
-      imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/1-1_x1awcm.jpg",
+      price: 162.500 ,
+      imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/french-coffee-250med-768x768_f4mwqf.jpg",
     },
     {
       id: 4,
@@ -29,7 +30,7 @@ const products = [
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
       price: 400,
-      imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/1-1_x1awcm.jpg",
+      imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/french-coffee-250med-768x768_f4mwqf.jpg",
     },
    ];
    module.exports = products;
