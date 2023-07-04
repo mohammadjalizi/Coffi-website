@@ -21,15 +21,15 @@ if (data) {
 
 <h1 className='  text-[#b68834] text-3xl text-center md:my-8 '>فروشگاه قهوه</h1>
 
-<div className=' flex  flex-wrap '>   
+<div className=' flex  flex-wrap gap-8 '>   
 {
 data.map((item)=>{
 
 return(
   
-<div key={item.id} className='  '>
+<div key={item.id} className='   w-80 shadow-2xl rounded-3xl '>
 
-<h1>{item.productName}</h1>
+<h1 className=' text-center my-2 '>{item.productName}</h1>
 <img src={item.imageLink}/>
 
 
