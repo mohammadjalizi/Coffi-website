@@ -29,14 +29,23 @@ data.map((item)=>{
 
 return(
   
-<div key={item.id} className='   w-80 shadow-2xl rounded-3xl '>
+<div key={item.id} className=' cursor-pointer hover:shadow-2xl Card  w-80  rounded-3xl '>
 
-<h1 className=' text-center my-2 '>{item.productName}</h1>
+
 <img src={item.imageLink}/>
-<div className='Icon'>  
-<h1  className='  h1 '>  {item.price} تومان </h1>
-<strong className='strong'>+</strong>
+<div className='  '>
+<h1 className=' text-center my-2 '>{item.productName}</h1>
+<div className=' flex justify-between items-center my-2  '>  
+<h1  className='  h1 text-xl '>  {item.price} تومان </h1>
+<strong  onClick={()=>{
+
+console.log('okkk')
+
+
+}} className='  text-sm  '> افزودن به سبد خرید  </strong>
     </div>
+  </div>
+
 
 
 
