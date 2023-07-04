@@ -20,7 +20,7 @@ const products = [
       productName: "T-shirt",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
-      price: 300,
+      price: 162.500,
       imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/1-1_x1awcm.jpg",
     },
     {
@@ -29,7 +29,7 @@ const products = [
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
       price: 400,
-      imageLink: "",
+      imageLink: "https://res.cloudinary.com/dlz1h6dhr/image/upload/v1688058628/coffi/1-1_x1awcm.jpg",
     },
    ];
    module.exports = products;
