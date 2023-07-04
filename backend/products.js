@@ -1,7 +1,7 @@
 const products = [
     {
       id: 1,
-      productName: "T-shirt",
+      productName: "coffi",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elite. Sequi, perferendis beatae asperiores.",
       price: 100,
