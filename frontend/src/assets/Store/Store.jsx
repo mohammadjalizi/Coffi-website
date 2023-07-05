@@ -29,7 +29,7 @@ data.map((item)=>{
 
 return(
   
-<div key={item.id} className=' cursor-pointer hover:shadow-2xl Card  w-80     '>
+<div key={item.id} className=' cursor-pointer shadow-2xl Card  w-80  hover:shadow-none    '>
 
 
 <img src={item.imageLink}/>
