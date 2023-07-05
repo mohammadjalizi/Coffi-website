@@ -16,7 +16,7 @@ erooorrr
   }
 if (data) {
   return (
-    <div>
+    <div className=' menu '>
 
 
       
@@ -29,7 +29,7 @@ data.map((item)=>{
 
 return(
   
-<div key={item.id} className=' cursor-pointer hover:shadow-2xl Card  w-80  rounded-3xl '>
+<div key={item.id} className=' cursor-pointer hover:shadow-2xl Card  w-80     '>
 
 
 <img src={item.imageLink}/>
