@@ -1,7 +1,8 @@
 import React from 'react'
 import './Seaction.css'
 import img1 from '../imag/b1.jpg'
-import img3 from '../imag/b2.jpg'
+import img2 from '../imag/b2.jpg'
+
 const Seaction = () => {
   return (
     <div>
@@ -24,16 +25,17 @@ const Seaction = () => {
 
 <div className=''>
 
-<img src={img1}/>
+<img src={img2}/>
+
 
 <ul className="post-tags">
 <li><a className=' hover:text-white ' href="#">سفر کردن</a></li>
 	<li><a className=' hover:text-white ' href="#">سبک زندگی</a></li>
 </ul>
 
-<h4>Portable latest Fashion for young women</h4>
-<p className='  w-full   md:w-96 '>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
+<h4 className=' mb-6'>سلام به کافه خانه خوش اومدید 🙂</h4>
+<p className='  w-full   md:w-[33rem] '>
+ما قصد داریم تا کار شما رو برای رفتن به بازار راحت کنیم و نگذاریم بین صدها مدل قهوه سرگردون بشید و آخر سر با چیزی که سلیقه شما نیست به خونه برگردید.
 </p>
 <p className="post-date">
 								31st January, 2018
@@ -44,14 +46,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <img src={img1}/>
 
+
 <ul className="post-tags">
 <li><a className=' hover:text-white ' href="#">سفر کردن</a></li>
 	<li><a className=' hover:text-white ' href="#">سبک زندگی</a></li>
 </ul>
 
-<h4>Portable latest Fashion for young women</h4>
-<p className=' w-full   md:w-96'>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
+<h4 className=' mb-6 '>سلام به کافه خانه خوش اومدید 🙂</h4>
+<p className='  w-full   md:w-[33rem] '>
+ما قصد داریم تا کار شما رو برای رفتن به بازار راحت کنیم و نگذاریم بین صدها مدل قهوه سرگردون بشید و آخر سر با چیزی که سلیقه شما نیست به خونه برگردید.
 </p>
 <p className="post-date">
 								31st January, 2018
