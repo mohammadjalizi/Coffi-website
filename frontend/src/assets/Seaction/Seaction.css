@@ -1,0 +1,32 @@
+ .post-tags li {
+    font-size: 12px;
+    margin: 20px 0px;
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 4px 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+ .post-tags li a {
+    color: #222;
+    font-weight: 500;
+ }
+ .post-tags li:hover{
+    background-color: #b68834;
+
+  outline: none;
+
+ }
+ .single-blog .post-date {
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+}
+.photo{
+
+    max-width: 1140px;
+
+}
