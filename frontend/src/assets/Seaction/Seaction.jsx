@@ -3,6 +3,7 @@ import './Seaction.css'
 import img1 from '../imag/b1.jpg'
 import img2 from '../imag/b2.jpg'
 
+
 const Seaction = () => {
   return (
     <div>
@@ -23,26 +24,27 @@ const Seaction = () => {
 
 
 
-<div className=''>
+<div className=' shadow-xl  '>
 
 <img src={img2}/>
 
 
 <ul className="post-tags">
-<li><a className=' hover:text-white ' href="#">سفر کردن</a></li>
+<li className=' '><a className=' hover:text-white ' href="#">سفر کردن</a></li>
 	<li><a className=' hover:text-white ' href="#">سبک زندگی</a></li>
 </ul>
 
-<h4 className=' mb-6'>سلام به کافه خانه خوش اومدید 🙂</h4>
-<p className='  w-full   md:w-[33rem] '>
+<h4 className='  mr-5 mb-6'>سلام به کافه خانه خوش اومدید 🙂</h4>
+<p className='mr mr-5 text-[#6c757d]  w-full   md:w-[33rem] '>
 ما قصد داریم تا کار شما رو برای رفتن به بازار راحت کنیم و نگذاریم بین صدها مدل قهوه سرگردون بشید و آخر سر با چیزی که سلیقه شما نیست به خونه برگردید.
 </p>
-<p className="post-date">
-								31st January, 2018
+<p className=" mt-6  post-date">
+						
 							</p>
+                       
 </div>
 
-<div>
+<div className=' shadow-xl '>
 
 <img src={img1}/>
 
@@ -52,12 +54,12 @@ const Seaction = () => {
 	<li><a className=' hover:text-white ' href="#">سبک زندگی</a></li>
 </ul>
 
-<h4 className=' mb-6 '>سلام به کافه خانه خوش اومدید 🙂</h4>
-<p className='  w-full   md:w-[33rem] '>
+<h4 className=' mr-5 mb-6 '>سلام به کافه خانه خوش اومدید 🙂</h4>
+<p className=' mr-5 text-[#6c757d]  w-full   md:w-[33rem] '>
 ما قصد داریم تا کار شما رو برای رفتن به بازار راحت کنیم و نگذاریم بین صدها مدل قهوه سرگردون بشید و آخر سر با چیزی که سلیقه شما نیست به خونه برگردید.
 </p>
-<p className="post-date">
-								31st January, 2018
+<p className="  mt-5  post-date">
+							
 							</p>
 </div>
 

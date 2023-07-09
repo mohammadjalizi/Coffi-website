@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import Store from './Store/Store'
 import Gallery from './gallery/Gallery'
 import Seaction from './Seaction/Seaction'
+import { Footer } from './footer/Footer'
 
 const Root = () => {
   return (
@@ -15,6 +16,7 @@ const Root = () => {
 <Store/>
 <Gallery/>
 <Seaction/>
+<Footer/>
 </div>
   )
 }
