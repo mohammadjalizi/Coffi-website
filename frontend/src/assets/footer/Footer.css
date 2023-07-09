@@ -1,8 +1,8 @@
 .footer{
 
-background-image: url('../imag/footer-bg.jpg');
+background-image: url('../imag/footer-bg.jpg') ;
 height: 30rem;
 background-repeat: no-repeat;
-
+background-size: cover;
 
 }

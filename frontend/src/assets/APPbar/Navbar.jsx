@@ -1,48 +1,45 @@
-import React from 'react'
-import img1 from '../imag/logo.png'
-import './Navbar.css'
-import Shopingcart from './Shopingcart'
-const Navbar = () => {
-  return (
-    <div className=' Navbar   text-white   '>
+    import React from 'react'
+    import img1 from '../imag/c1.svg'
+    import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
+    import './Navbar.css'
 
-<div className='      py-2  hidden  md:flex   justify-between   '>
 
-<div className='  '>  
 
-<a  className=' m-4 '   href=''>  صفحه ی اصلی </a>
-<a     href='#'>فروشگاه</a>
-<a  className=' m-4 '   href=''>  درباره من </a>
+    const Navbar = () => {
+    return(
+<div div className=' Navbar '>
+<div className='  flex justify-between  '>
+<div>
+<img  className=' hidden md:block w-12  '  src={img1}/>
 
 
 </div>
-<div className=' flex justify-center items-center '>
+<div>  
 
 
 
-<img src={img1}/>
-
-</div>
-
-</div>
-
-<div className='    h-72       '>
-  <div className=' header    '>
-
-
-
-
-<h1 className='   text-2xl  my-10 '> روز خود را با یک فنجان قهوه شروع کنید</h1>
-
-<a href='       ' className='btn     text-2xl   '>   خرید   </a>
-
-</div>
+<a  className=' list-none mr-3 '  href='#'> صفحه ی اصلی </a>
+<a  className=' list-none mr-3 '  href='#'>  قهوه  </a>
+<a  className=' list-none mr-3 '  href='#'>  سبد خرید  </a>
+<a   className=' list-none mr-3 ' href='#'>  درباره ی ما  </a>
 
 
 </div>
+<div className=' flex items-center  '>
+<span className=' relative  cart__icon'>
 
-    </div>
-  )
-}
+<  PiShoppingCartSimpleLight className=' text-white text-2xl '/>
+<span className="cart__badge">0</span>
+</span>
 
-export default Navbar
+
+</div>
+</div>
+</div>
+
+
+      
+    )
+    }
+
+    export default Navbar
