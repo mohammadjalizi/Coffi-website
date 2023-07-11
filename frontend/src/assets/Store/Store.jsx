@@ -3,7 +3,11 @@ import './Store.css'
 import { useGetProductApiByNameQuery } from '../../Redux/ProductApi'
 const dataarry=[{},{},{}]
 import { BsFillBasketFill } from "react-icons/bs";
+import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
+import { useState } from 'react';
+
 const Store = () => {
+  const [Count,SetCount]=useState(1)
   const { data, error, isLoading } = useGetProductApiByNameQuery()
 
   if (isLoading) {
@@ -34,15 +38,18 @@ return(
 
 <img src={item.imageLink}/>
 <div className='  '>
-<h1 className=' text-center my-2 '>{item.productName}</h1>
-<div className=' flex justify-between items-center my-2  '>  
+<h1 className=' text-center my-2 text-xs '>{item.productName}</h1>
+<div className='  flex justify-between items-center my-2  '>  
 <h1  className='  h1 text-xl '>  {item.price} تومان </h1>
 <strong  onClick={()=>{
 
-console.log('okkk')
+
+}} className='  text-sm  '>  <  PiShoppingCartSimpleLight onClick={()=>{
 
 
-}} className='  text-sm  '> افزودن به سبد خرید  </strong>
+
+
+}} className='  text-2xl '/>   </strong>
     </div>
   </div>
 

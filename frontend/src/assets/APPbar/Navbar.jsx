@@ -42,7 +42,7 @@
 
 <p className='  heading text-white  '> روز خود را با
 یک قهوه شروع کنید </p>
-<a href="#" className="  my-4 text-center my-5 primary-btn text-uppercase">
+<a href="#" className="  my-4 text-center  primary-btn text-uppercase">
 خرید قهوه
 </a>
 
