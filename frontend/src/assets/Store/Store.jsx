@@ -1,16 +1,19 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import './Store.css'
-import { useGetProductApiByNameQuery } from '../../Redux/ProductApi'
+
 const dataarry=[{},{},{}]
 import { BsFillBasketFill } from "react-icons/bs";
 import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
 import { useState } from 'react';
-import { Addtocart } from '../../Redux/ProductSlice'
+import { addToCart } from "../Redux/ProductSlice";
+import { useGetproductsByNameQuery } from '../Redux/ProductApi';
+
 
 const Store = () => {
-  const [Count,SetCount]=useState(1)
-  const { data, error, isLoading } = useGetProductApiByNameQuery()
+  const [Count,SetCount]=useState()
+  const { data, error, isLoading } = useGetproductsByNameQuery()
+  const {selectedProducts} = useSelector((state) => state.carttt)
   const dispatch = useDispatch()
 
   if (isLoading) {
@@ -49,8 +52,7 @@ return(
 
 }} className='  cursor-pointer bg-orange-600  text-sm  '>  <  PiShoppingCartSimpleLight onClick={()=>{
 
-dispatch(Addtocart())
-
+  dispatch(addToCart(item))
 
 }} className='  text-2xl '/>   </strong>
     </div>

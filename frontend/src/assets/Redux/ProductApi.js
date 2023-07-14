@@ -2,11 +2,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 // Define a service using a base URL and expected endpoints
-export const ProductApi = createApi({
-  reducerPath: 'ProductApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
+export const productsApi = createApi({
+  reducerPath: 'productsApi',
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/' }),
   endpoints: (builder) => ({
-    getProductApiByName: builder.query({
+    getproductsByName: builder.query({
       query: (name) => `products`,
     }),
   }),
@@ -14,4 +14,4 @@ export const ProductApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetProductApiByNameQuery } = ProductApi
+export const { useGetproductsByNameQuery } = productsApi
