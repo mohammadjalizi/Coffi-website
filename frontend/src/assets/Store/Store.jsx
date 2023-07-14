@@ -1,14 +1,17 @@
 import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import './Store.css'
 import { useGetProductApiByNameQuery } from '../../Redux/ProductApi'
 const dataarry=[{},{},{}]
 import { BsFillBasketFill } from "react-icons/bs";
 import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
 import { useState } from 'react';
+import { Addtocart } from '../../Redux/ProductSlice'
 
 const Store = () => {
   const [Count,SetCount]=useState(1)
   const { data, error, isLoading } = useGetProductApiByNameQuery()
+  const dispatch = useDispatch()
 
   if (isLoading) {
     return(
@@ -33,7 +36,7 @@ data.map((item)=>{
 
 return(
   
-<div key={item.id} className=' p-[30px] cursor-pointer shadow-2xl Card  w-80  hover:shadow-none    '>
+<div key={item.id} className=' p-[30px]  shadow-2xl Card  w-80  hover:shadow-none    '>
 
 
 <img src={item.imageLink}/>
@@ -44,9 +47,9 @@ return(
 <strong  onClick={()=>{
 
 
-}} className='  text-sm  '>  <  PiShoppingCartSimpleLight onClick={()=>{
+}} className='  cursor-pointer bg-orange-600  text-sm  '>  <  PiShoppingCartSimpleLight onClick={()=>{
 
-
+dispatch(Addtocart())
 
 
 }} className='  text-2xl '/>   </strong>
