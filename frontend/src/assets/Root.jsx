@@ -5,19 +5,25 @@ import Store from './Store/Store'
 import Gallery from './gallery/Gallery'
 import Seaction from './Seaction/Seaction'
 import { Footer } from './footer/Footer'
+import { Outlet } from 'react-router-dom'
+import Home from './Home/Home'
 
 const Root = () => {
   return (
-    <div className=' Rot '>
+    <div>  
     
-
 <Navbar/>
-<Header/>
-<Store/>
-<Gallery/>
-<Seaction/>
+
+
+
+<Outlet/>
+
 <Footer/>
+
 </div>
+
+
+
   )
 }
 

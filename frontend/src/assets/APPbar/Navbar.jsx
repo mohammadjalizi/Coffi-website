@@ -2,10 +2,12 @@
     import img1 from '../imag/c1.svg'
     import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
     import './Navbar.css'
+import { useNavigate } from 'react-router-dom';
 
 
 
     const Navbar = () => {
+        const navigate = useNavigate();
     return(
 <div  className=' Navbar  '>
 <div className='  flex justify-between  '>
@@ -18,9 +20,21 @@
 
 
 
-<a  className='   text-white  list-none mr-3 '  href='#'> صفحه ی اصلی </a>
-<a  className='  text-white  list-none mr-3 '  href='#'>  قهوه  </a>
-<a  className='   text-white list-none mr-3 '  href='#'>  سبد خرید  </a>
+<a onClick={()=>{
+
+navigate('/home')
+
+}}  className='   text-white  list-none mr-3 '  href='#'> صفحه ی اصلی </a>
+<a  onClick={()=>{
+
+navigate("/store")
+
+}} className='  text-white  list-none mr-3 '  href='#'>  قهوه  </a>
+<a  onClick={()=>{
+
+navigate("/cart")
+
+}} className='   text-white list-none mr-3 '  href='#'>  سبد خرید  </a>
 <a   className='  text-white  list-none mr-3 ' href='#'>  درباره ی ما  </a>
 
 

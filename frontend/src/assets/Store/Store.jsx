@@ -8,12 +8,15 @@ import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
 import { useState } from 'react';
 import { addToCart } from "../Redux/ProductSlice";
 import { useGetproductsByNameQuery } from '../Redux/ProductApi';
+import Navbar from '../APPbar/Navbar';
+import { Footer } from '../footer/Footer';
 
 
 const Store = () => {
   const [Count,SetCount]=useState()
   const { data, error, isLoading } = useGetproductsByNameQuery()
   const {selectedProducts} = useSelector((state) => state.carttt)
+  console.log(selectedProducts)
   const dispatch = useDispatch()
 
   if (isLoading) {
@@ -26,10 +29,12 @@ erooorrr
   }
 if (data) {
   return (
+    <>   
+    
+ 
     <div className=' menu '>
 
 
-      
 
 <h1 className='  text-[#b68834] text-3xl text-center md:my-8 '>فروشگاه قهوه</h1>
 
@@ -71,7 +76,10 @@ return(
 
 }
 </div>
+
     </div>
+ 
+    </>
   )
 }
 if (error) {
