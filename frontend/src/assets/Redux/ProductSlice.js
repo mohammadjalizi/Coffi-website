@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   selectedProducts: [
-"mohammadf"
+
   ],
 };
 
@@ -13,8 +13,8 @@ export const counterSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
   // action.payload => product From API => القيمة التى بداخل الاقواس
-      const productWithQuntitiy={...action.payload, "quantitiy":1}
-      state.selectedProducts.push=productWithQuntitiy
+      const productWithQuntitiy={...action.payload, "quantity":1}
+      state.selectedProducts.push=(productWithQuntitiy)
     },
 
     increaseQuantity: (state, action) => {
