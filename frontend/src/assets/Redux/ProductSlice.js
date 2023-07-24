@@ -13,7 +13,8 @@ export const counterSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
   // action.payload => product From API => القيمة التى بداخل الاقواس
-      console.log("doneeeeeeeeeeee")
+      const productWithQuntitiy={...action.payload, "quantitiy":1}
+      state.selectedProducts.push=productWithQuntitiy
     },
 
     increaseQuantity: (state, action) => {
