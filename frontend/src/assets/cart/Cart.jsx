@@ -8,10 +8,10 @@ const Cart = () => {
  
     
     <div className='  '>
-      <Navbar/>
+ 
         
 cartttt
-<Footer/>
+
     </div>
   
   )
