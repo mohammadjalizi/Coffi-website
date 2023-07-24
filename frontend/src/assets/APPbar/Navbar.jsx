@@ -3,7 +3,8 @@
     import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
     import './Navbar.css'
 import { useNavigate } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
+const {selectedProducts} = useSelector((state) => state.carttt)
 
 
     const Navbar = () => {
@@ -43,7 +44,7 @@ navigate("/cart")
 <span className=' relative  cart__icon'>
 
 <  PiShoppingCartSimpleLight className=' text-white text-2xl '/>
-<span className="cart__badge">0</span>
+<span className="cart__badge">{selectedProducts.length }</span>
 </span>
 
 
