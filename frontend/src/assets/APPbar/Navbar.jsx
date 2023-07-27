@@ -4,11 +4,13 @@
     import './Navbar.css'
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-const {selectedProducts} = useSelector((state) => state.carttt)
+// @ts-ignore
+ 
 
 
     const Navbar = () => {
         const navigate = useNavigate();
+        const {selectedProducts} = useSelector((state) => state.carttt)
     return(
 <div  className=' Navbar  '>
 <div className='  flex justify-between  '>
@@ -44,7 +46,7 @@ navigate("/cart")
 <span className=' relative  cart__icon'>
 
 <  PiShoppingCartSimpleLight className=' text-white text-2xl '/>
-<span className="cart__badge">{selectedProducts.length }</span>
+<span className="cart__badge">   {selectedProducts.length} </span>
 </span>
 
 
