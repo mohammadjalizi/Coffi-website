@@ -19,7 +19,11 @@ export const counterSlice = createSlice({
 
     increaseQuantity: (state, action) => {
       // action.payload => product From user 
-      console.log("doneeeeeeeeeeee")
+     const increaseproduct=state.selectedProducts.find((item)=>{
+
+return  item === action.payload
+
+     })
     },
 
     decreaseQuantity: (state, action) => {
