@@ -2,7 +2,7 @@
     import img1 from '../imag/c1.svg'
     import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
     import './Navbar.css'
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 // @ts-ignore
  
@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux';
     const Navbar = () => {
         const navigate = useNavigate();
         const {selectedProducts} = useSelector((state) => state.carttt)
+        const cuuruntlocationh=useLocation()
     return(
 <div  className=' Navbar  '>
 <div className='  flex justify-between  '>
