@@ -34,7 +34,7 @@ navigate('/home')
 navigate("/store")
 
 }} className='  text-white  list-none mr-3 '  href='#'>  قهوه  </a>
-<a  onClick={()=>{
+<a  tertertet  onClick={()=>{
 
 navigate("/cart")
 
