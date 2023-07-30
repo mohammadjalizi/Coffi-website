@@ -34,7 +34,7 @@ navigate('/home')
 navigate("/store")
 
 }} className='  text-white  list-none mr-3 '  href='#'>  قهوه  </a>
-<a  tertertet  onClick={()=>{
+<a    onClick={()=>{
 
 navigate("/cart")
 
@@ -47,7 +47,11 @@ navigate("/cart")
 <span className=' relative  cart__icon'>
 
 <  PiShoppingCartSimpleLight className=' text-white text-2xl '/>
-<span className="cart__badge">   {selectedProducts.length} </span>
+<span  onClick={()=>{
+
+navigate('/cart')
+
+}}   className="cart__badge">   {selectedProducts.length} </span>
 </span>
 
 
