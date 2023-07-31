@@ -9,9 +9,11 @@ import { useSelector } from 'react-redux';
 
 
     const Navbar = () => {
+    
         const navigate = useNavigate();
         const {selectedProducts} = useSelector((state) => state.carttt)
         const cuuruntlocationh=useLocation()
+        console.log(cuuruntlocationh.pathname)
     return(
 <div  className=' Navbar  '>
 <div className='  flex justify-between  '>
@@ -25,7 +27,15 @@ import { useSelector } from 'react-redux';
 
 
 <a onClick={()=>{
-
+  sx={{
+    bgcolor:
+    cuuruntlocationh.pathname === "/"
+        ? // @ts-ignore
+          theme.palette.favColor.main
+        : null,
+  }}
+  disablePadding
+>
 navigate('/home')
 
 }}  className='   text-white  list-none mr-3 '  href='#'> صفحه ی اصلی </a>
@@ -47,11 +57,11 @@ navigate("/cart")
 <span className=' relative  cart__icon'>
 
 <  PiShoppingCartSimpleLight className=' text-white text-2xl '/>
-<span  onClick={()=>{
+<span   onClick={()=>{
 
 navigate('/cart')
 
-}}   className="cart__badge">   {selectedProducts.length} </span>
+}}   className="cart__badge cursor-pointer">   {selectedProducts.length} </span>
 </span>
 
 
