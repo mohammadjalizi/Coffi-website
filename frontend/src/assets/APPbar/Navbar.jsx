@@ -2,14 +2,14 @@
     import img1 from '../imag/c1.svg'
     import {   PiShoppingCartSimpleLight } from 'react-icons/pi';
     import './Navbar.css'
-import { useLocation, useNavigate } from 'react-router-dom';
+import { redirect, useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 // @ts-ignore
  
 
 
     const Navbar = () => {
-    
+     
         const navigate = useNavigate();
         const {selectedProducts} = useSelector((state) => state.carttt)
         const cuuruntlocationh=useLocation()
@@ -26,19 +26,11 @@ import { useSelector } from 'react-redux';
 
 
 
-<a onClick={()=>{
-  sx={{
-    bgcolor:
-    cuuruntlocationh.pathname === "/"
-        ? // @ts-ignore
-          theme.palette.favColor.main
-        : null,
-  }}
-  disablePadding
->
-navigate('/home')
+<a    onClick={()=>{
 
-}}  className='   text-white  list-none mr-3 '  href='#'> صفحه ی اصلی </a>
+navigate('/home')
+ 
+}}  className='      text-white  list-none mr-3 '  href='#'> صفحه ی اصلی </a>
 <a  onClick={()=>{
 
 navigate("/store")
