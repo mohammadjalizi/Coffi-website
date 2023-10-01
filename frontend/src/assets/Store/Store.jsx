@@ -16,7 +16,7 @@ const Store = () => {
   const [Count,SetCount]=useState()
   const { data, error, isLoading } = useGetproductsByNameQuery()
   const {selectedProducts} = useSelector((state) => state.carttt)
-
+ console.log(selectedProducts)
   const dispatch = useDispatch()
 
   if (isLoading) {

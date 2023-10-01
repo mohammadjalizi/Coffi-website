@@ -4,8 +4,10 @@ import { Footer } from '../footer/Footer'
 import { useSelector } from 'react-redux'
 import './Cart.css'
 import { PiShoppingCartSimpleLight } from 'react-icons/pi'
+import { addToCart } from '../Redux/ProductSlice'
 
 const Cart = () => {
+  // @ts-ignore
   const {selectedProducts} = useSelector((state) => state.carttt)
   return (
  
@@ -32,7 +34,7 @@ return (
 
 }} className='  cursor-pointer bg-orange-600  text-sm  '>  <  PiShoppingCartSimpleLight onClick={()=>{
 
-  dispatch(addToCart(item))
+  dispatch(addToCart())
 
 }} className='  text-2xl '/>   </strong>
     </div>
@@ -52,6 +54,7 @@ return (
  })}
   
     </div>
+    
   
   )
 }
